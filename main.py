@@ -1,8 +1,10 @@
-import sys
+from itertools import permutations
 
-if __name__ == '__main__':
-    n = int(input())
+elements = [1,2,3]
+result = permutations(elements)
 
-    for i in range(1, n + 1):
-        print(i, end=' ')
+for perm in result:
+    print(perm)
+
+
 
